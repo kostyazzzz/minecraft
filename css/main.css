@@ -1,0 +1,176 @@
+body {
+    font-family: 'Roboto Condensed', sans-serif;
+    background-color: #050505e8;
+}
+
+.header {
+    z-index: 2;
+    position: fixed;
+    width: 100%;
+}
+.header__content {
+}
+.header__top {
+    text-align: right;
+    background-color: #050505e8;
+
+}
+.link-form {
+    color: #fff;
+    font-size: 1.1em;
+}
+.header__bottom {
+    background-image: url(../img/stone-1.png);
+}
+.menu {
+    align-items: center;
+    justify-content: space-between;
+    display: flex;
+}
+.logo {
+    display: inline-block;
+    max-width: 250px;
+}
+
+.logo img {
+    height: auto;
+}
+.list-links-other-pages {
+    column-gap: 10px;
+    display: flex;
+}
+.list-links-other-pages__item {
+}
+.link-other-page {
+}
+.link-other-page__title {
+    color: #f7f7f7;
+    font-size: 1.3em;
+}
+.link-other-page__skin-img {
+    vertical-align: middle;
+    display: inline-block;
+    width:100px ;
+}
+
+.link-other-page__skin-img img {
+    height: auto;
+}
+
+/* == main == */
+.main{
+    padding-top: 160px ;
+}
+.about-game {
+}
+.container {
+}
+.about-game__content {
+    margin: 0 auto;
+    width: 70%;
+    position: relative;
+    background-image: url(../img/minecraft-img.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 70vh;
+}
+.about-game__description {
+    text-shadow: 2px 2px 2px #000;
+    text-align: center;
+    font-size: 1.5em;
+    color:#f7f7f7;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 50%;
+    position: absolute;
+    width: 70%;
+}
+.about-game__text {
+    
+}
+
+/*==footer== */
+.footer{
+    padding: 30px 0;
+}
+
+.border-line {
+        margin: 20px 0;
+        padding: 0;
+        height: 0;
+        border: none;
+        border-width: 0 0 5px;
+        border-style: solid;
+        border-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2 1" width="8" height="4"><circle fill="orange" cx="1" cy="0.5" r="0.5"></circle></svg>') 0 0 100% repeat;
+        background-position: 50%;
+        box-sizing: border-box;
+        color: orange;
+}
+
+.footer__content{
+    align-items: center;
+    justify-content: space-between;
+    display: flex;
+}
+
+.list-links {
+    column-gap: 10px;
+    display: flex;
+}
+
+.social-link {
+    display: block;
+    width: 50px;
+    height: 50px;
+}
+
+/* =====adaptive===== */
+
+@media(max-width: 768px){
+    .link-form{
+        font-size: 16px;
+    }
+    .logo{
+        max-width: 200px;
+    }
+    .link-other-page{
+        text-align: center;
+    }
+    .link-other-page__skin-img{
+        display: block;
+        margin: 0 auto;
+        height: 70px;
+        width: 70px;
+    }
+    .link-other-page__title{
+        font-size: 18px;
+        display: block;
+    }
+
+    .about-game__content{
+        width: 100%;
+    }
+}
+
+@media(max-width: 500px){
+    .main{
+        padding-top: 205px;
+    }
+
+    .menu{
+        flex-direction: column;
+        row-gap: 20px;
+    }
+    .header__bottom{
+        padding: 10px 0;
+    }
+
+    .about-game__description{
+        width: 95%;
+    }
+
+    .footer__content{
+        flex-direction: column;
+        row-gap: 20px;
+    }
+}
