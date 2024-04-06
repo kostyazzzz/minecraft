@@ -136,10 +136,30 @@ body {
     display: flex;
 }
 .slider__slide{ 
+    background-size: cover;
+    background-repeat: no-repeat;
     margin: 0 10px;
-    height: 200px;
-    background-color: bisque;
+    min-height: 200px;
 }
+.slider__slide--mobs {
+    background-image: url(../img/mobs.webp);
+}
+.slider__slide--food {
+    background-image: url(../img/food.jpg);
+}
+
+.slider__slide--resources {
+    background-image: url(../img/resources.png);
+}
+
+.slider__slide--peacefull {
+    background-image: url(../img/peacefull-mob.jpg);
+}
+
+.slider__slide--swords {
+    background-image: url(../img/swords.png);
+}
+
 /* =====adaptive===== */
 
 @media(max-width: 768px){
