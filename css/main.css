@@ -125,9 +125,10 @@ body {
 }
 /* ====slider==== */
 .slider{
+    position: relative;
     margin: 0 auto;
     width: 70%;
-    background-color:rgb(16, 80, 199);
+    /* background-color:rgb(16, 80, 199); */
 }
 .slick-list {
     overflow: hidden;
@@ -172,6 +173,26 @@ body {
 
 .slider__slide--swords {
     background-image: url(../img/swords.png);
+}
+.slick-arrow {
+    z-index:  2;
+    transform: translateY(-50%);
+    top: 50%;
+    position:absolute;
+}
+.slick-prev{
+    left:-50px;
+}
+.slick-next{
+    right:-50px;
+}
+
+.slick-arrow__icon{
+    fill: #fff;
+}
+
+.slick-dots {
+    display: none;
 }
 
 /* =====adaptive===== */
