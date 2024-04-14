@@ -136,11 +136,25 @@ body {
     display: flex;
 }
 .slider__slide{ 
+    position:relative;
     background-size: cover;
     background-repeat: no-repeat;
     margin: 0 10px;
-    min-height: 200px;
+    min-height: 400px;
 }
+
+.slider__description {
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 50%;
+    width: 90%;
+    position: absolute;
+    text-align: center;
+    text-shadow: 3px 2px 4px rgb(0, 0, 0);
+    font-size: 2em;
+    color: rgb(255, 255, 255);
+}
+
 .slider__slide--mobs {
     background-image: url(../img/mobs.webp);
 }
