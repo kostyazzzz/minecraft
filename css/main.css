@@ -180,6 +180,11 @@ body {
     top: 50%;
     position:absolute;
 }
+
+.slick-arrow:hover .slick-arrow__icon{
+    fill: rgb(10, 128, 88);
+}
+
 .slick-prev{
     left:-50px;
 }
@@ -188,8 +193,10 @@ body {
 }
 
 .slick-arrow__icon{
+    transition: 0.5s;
     fill: #fff;
 }
+
 
 .slick-dots {
     display: none;
