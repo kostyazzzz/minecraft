@@ -197,10 +197,33 @@ body {
     fill: #fff;
 }
 
-
 .slick-dots {
-    display: none;
+    bottom: -25px;
+    transform:translateX(-50%);
+    left: 50%;
+    position: absolute;
+    display: flex;          
+    column-gap: 15px;
 }
+
+.slick-dots button{
+    transition: 0.5s;
+    line-height: 0;
+    font-size: 0;
+    background-color:green;
+    width: 15px;
+    height: 15px;
+    box-shadow: 0px 0px 3px  #a7761ace;
+}
+
+.slick-dots button:hover{
+    background-color: #f7f7f7;
+}
+
+.slick-active button{
+    background-color: #f7f7f7;
+}
+
 
 /* =====adaptive===== */
 
