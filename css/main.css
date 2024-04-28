@@ -123,6 +123,107 @@ body {
     width: 50px;
     height: 50px;
 }
+/* ====slider==== */
+.slider{
+    position: relative;
+    margin: 0 auto;
+    width: 70%;
+    /* background-color:rgb(16, 80, 199); */
+}
+.slick-list {
+    overflow: hidden;
+}
+.slick-track{
+    display: flex;
+}
+.slider__slide{ 
+    position:relative;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 0 10px;
+    min-height: 400px;
+}
+
+.slider__description {
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 50%;
+    width: 90%;
+    position: absolute;
+    text-align: center;
+    text-shadow: 3px 2px 4px rgb(0, 0, 0);
+    font-size: 2em;
+    color: rgb(255, 255, 255);
+}
+
+.slider__slide--mobs {
+    background-image: url(../img/mobs.webp);
+}
+.slider__slide--food {
+    background-image: url(../img/food.jpg);
+}
+
+.slider__slide--resources {
+    background-image: url(../img/resources.png);
+}
+
+.slider__slide--peacefull {
+    background-image: url(../img/peacefull-mob.jpg);
+}
+
+.slider__slide--swords {
+    background-image: url(../img/swords.png);
+}
+.slick-arrow {
+    z-index:  2;
+    transform: translateY(-50%);
+    top: 50%;
+    position:absolute;
+}
+
+.slick-arrow:hover .slick-arrow__icon{
+    fill: rgb(10, 128, 88);
+}
+
+.slick-prev{
+    left:-50px;
+}
+.slick-next{
+    right:-50px;
+}
+
+.slick-arrow__icon{
+    transition: 0.5s;
+    fill: #fff;
+}
+
+.slick-dots {
+    bottom: -25px;
+    transform:translateX(-50%);
+    left: 50%;
+    position: absolute;
+    display: flex;          
+    column-gap: 15px;
+}
+
+.slick-dots button{
+    transition: 0.5s;
+    line-height: 0;
+    font-size: 0;
+    background-color:green;
+    width: 15px;
+    height: 15px;
+    box-shadow: 0px 0px 3px  #a7761ace;
+}
+
+.slick-dots button:hover{
+    background-color: #f7f7f7;
+}
+
+.slick-active button{
+    background-color: #f7f7f7;
+}
+
 
 /* =====adaptive===== */
 
@@ -150,6 +251,15 @@ body {
     .about-game__content{
         width: 100%;
     }
+
+    .slider{
+        width: 100%;
+    } 
+
+    .slick-arrow{
+        display: none !important;
+    }
+
 }
 
 @media(max-width: 500px){
@@ -172,5 +282,9 @@ body {
     .footer__content{
         flex-direction: column;
         row-gap: 20px;
+    }
+
+    .slider__description{
+        font-size: 1.2em;
     }
 }
