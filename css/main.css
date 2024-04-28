@@ -251,6 +251,15 @@ body {
     .about-game__content{
         width: 100%;
     }
+
+    .slider{
+        width: 100%;
+    } 
+
+    .slick-arrow{
+        display: none !important;
+    }
+
 }
 
 @media(max-width: 500px){
@@ -273,5 +282,9 @@ body {
     .footer__content{
         flex-direction: column;
         row-gap: 20px;
+    }
+
+    .slider__description{
+        font-size: 1.2em;
     }
 }
