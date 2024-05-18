@@ -300,6 +300,14 @@ body {
         display: none !important;
     }
 
+    .card-mode{
+        width: 100%;
+    }
+
+    .card-mode__wrapper-img{
+        width: 90%;
+    }
+
 }
 
 @media(max-width: 500px){
@@ -326,5 +334,13 @@ body {
 
     .slider__description{
         font-size: 1.2em;
+    }
+
+    .card-mode__description{
+        font-size: 18px;
+    }
+
+    .card-mode__wrapper-img{
+        width: 100%;
     }
 }
