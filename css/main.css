@@ -92,8 +92,10 @@ body {
 .game-resorces__content {
 }
 .list-cards-mode {
+    list-style: none;
 }
-.list-card-mode__item {
+.list-card-mode__item:not(:last-child) {
+    margin-bottom: 30px;
 }
 .card-mode {
     box-shadow: 0 0 3px white, inset 0 0 3px white;
