@@ -88,6 +88,48 @@ body {
 .about-game__text {
     
 }
+/*==game-resources==*/
+.game-resorces__content {
+}
+.list-cards-mode {
+    list-style: none;
+}
+.list-card-mode__item:not(:last-child) {
+    margin-bottom: 30px;
+}
+.card-mode {
+    box-shadow: 0 0 3px white, inset 0 0 3px white;
+    border-radius: 20px;
+    padding:20px ;
+    border: 2px solid white;
+    gap: 30px;
+    align-items: center;
+    flex-direction: column;
+    display: flex;
+    width: 80%;
+    margin: 0 auto;
+}
+.card-mode__wrapper-img {
+    overflow: hidden;
+    border-radius: 20px;
+    width:70%;
+}
+.card-mode__description {
+    text-align: center;
+    color: #fff;
+    font-weight: 500;
+    font-size: 20px;
+}
+.card-mode__link {
+    display: inline-block;
+    padding:  10px 20px;
+    color: white;
+    background-color: green;
+}
+
+
+
+
 
 /*==footer== */
 .footer{
@@ -260,6 +302,14 @@ body {
         display: none !important;
     }
 
+    .card-mode{
+        width: 100%;
+    }
+
+    .card-mode__wrapper-img{
+        width: 90%;
+    }
+
 }
 
 @media(max-width: 500px){
@@ -286,5 +336,13 @@ body {
 
     .slider__description{
         font-size: 1.2em;
+    }
+
+    .card-mode__description{
+        font-size: 18px;
+    }
+
+    .card-mode__wrapper-img{
+        width: 100%;
     }
 }
